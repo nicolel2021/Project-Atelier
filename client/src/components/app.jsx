@@ -42,8 +42,8 @@ class App extends React.Component {
         allPromises.push(axios.get(`/qa/questions`, { params: { product_id: id } }));
         Promise.all(allPromises)
             .then((allPromisesData) => {
-                var filteredRelatedProductsIDs = allPromisesData[2].data.filter(id => id !== this.state.productID);
-                filteredRelatedProductsIDs = [...new Set(filteredRelatedProductsIDs)];
+                var uniqueIDs = [...new Set(allPromisesData[2].data)];
+                var filteredRelatedProductsIDs = uniqueIDs.filter(id => id !== this.state.productID);;
                 this.setState({
                     productInfo: allPromisesData[0].data,
                     productStyle: allPromisesData[1].data,
