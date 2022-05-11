@@ -31,6 +31,7 @@ Our application allows the user to click through products and styles to add to t
 2) Related Products
 * The Related Products module contains two lists. Related Products list internally recommends related products based on the current page product.
 * Users can save their favortie products in the Outfit list.
+![Related Products](https://github.com/nicolel2021/Project-Atelier/blob/master/screenshots/Related%20Product%20Screenshot.jpg)
 3) Questions & Answers
 * The Questions & Answers module allows asking and answering of questions for the product selected.
 * This component extends the ability to view and search questions, ask questions, answer questions and provide feedback on questions about the current product.
